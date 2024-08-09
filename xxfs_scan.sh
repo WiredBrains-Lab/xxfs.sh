@@ -30,4 +30,4 @@ xxh_copy() {
     fi
 }
 
-find $2 -type f | while read file; do xxh_copy "$file"; done
+find $scan_dir -type f | while read file; do xxh_copy "$file"; done
