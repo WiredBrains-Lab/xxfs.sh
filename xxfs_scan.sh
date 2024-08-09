@@ -1,6 +1,6 @@
 #!/bin/bash
 
-if [ $# != 2 ] || { [ $# == 1 ] && [ -d "$XXFS_HOME" ]; }; then
+if [ $# != 2 ] || { [ $# == 1 ] && [ -z "$XXFS_HOME" ]; }; then
     echo "    Usage: xxfs_scan.sh root_dir scan_dir
     
     Or, set \$XXFS_HOME to the 'root_dir'\n"
