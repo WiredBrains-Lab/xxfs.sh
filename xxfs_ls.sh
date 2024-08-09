@@ -16,4 +16,3 @@ else
 fi
 scan_dir=$2
 
-
