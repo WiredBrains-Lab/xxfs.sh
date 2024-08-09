@@ -23,9 +23,10 @@ xxh_copy() {
     hfname=`xxh_fname $h`
 
     if [ ! -L $hfname ]; then
-        echo "Linking $1 to $hfname"
+        abspath=`realpath $1`
+        echo "Linking $abspath to $hfname"
         mkdir -p `dirname $hfname`
-        ln -s `realpath $1` $hfname
+        ln -s $abspath $hfname
     fi
 }
 
