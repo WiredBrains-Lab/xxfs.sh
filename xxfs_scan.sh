@@ -13,8 +13,10 @@ if [ ! -d "$DIR" ]; then DIR="$PWD"; fi
 
 if [ ! -z ${XXFS_HOME} ]; then
     root_dir=$XXFS_HOME
+    scan_dir=$1
 else    
     root_dir=$1
+    scan_dir=$2
 fi
 scan_dir=$2
 
