@@ -18,7 +18,6 @@ else
     root_dir=$1
     scan_dir=$2
 fi
-scan_dir=$2
 
 xxh_copy() {
     h=`xxh $1`
